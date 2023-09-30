@@ -1,0 +1,12 @@
+- route:
+    id: route-e0cb
+    from:
+      uri: kamelet:timer-source
+      id: from-c1c3
+      parameters:
+        period: 1000
+        repeatCount: 6
+      steps:
+        - log:
+            message: ${date:now}
+            id: log-0738
